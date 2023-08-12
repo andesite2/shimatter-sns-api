@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
-const POST = 8000;
+const POST = process.env.POST || 8000;
 app.use(cors());
 app.use(express.json());
 

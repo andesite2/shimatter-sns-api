@@ -47,7 +47,6 @@ router.post("/login", async (req, res) => {
     }
 
     const isPasswordVaild = await bcrypt.compare(password, user.password);
-    n;
 
     if (!isPasswordVaild) {
         return res
